@@ -13,7 +13,7 @@ The downloading instructions are given in the detailed description of each exper
 Shunya Minami, Kenji Fukumizu, Yoshihiro Hayashi and Ryo Yoshida. "Transfer learning with affine model transformation." [arXiv:22XX.XXXXX](XXX)
 
 # Repository Descriptions
-Each repository consists of three folders: 10_Data (dataset folder), 20_PGM (python code folder), 30_Output (output folder).
+Each repository consists of three folders: '/10_Data' (dataset folder), '/20_PGM' (python code folder) and '30_Output' (output folder).
 
 ## 11_SARCOS
 We use SARCOS dataset (Williams & Rasmussen, 2006). 
@@ -21,13 +21,13 @@ The task is to predict the feed-forward torque required to follow the desired tr
 21 features representing the joints’ position, velocity, and acceleration are used as input, and six torque other than the one used as the target domain are used as source features.
 
 ### Dataset
-You should download two dataset; 'sarcos_inv.mat' and 'satcos_inv_test.mat' from [web page](http://gaussianprocess.org/gpml/data/) for 'Gaussian Processes for Machine Learning.'
+You should download two dataset; 'sarcos_inv.mat' and 'satcos_inv_test.mat' from the [web page](http://gaussianprocess.org/gpml/data/) for 'Gaussian Processes for Machine Learning.'
 These dataset include 44,484 training samples and 4,449 test samples.
 
 ### Programs
-Place the two datasets in '/10_Data' folder and run '300_TransferLearning.ipynb'.
-- 300_TransferLearning.ipynb : Main code
-- 400_MakeResult.ipynb : For figure in the paper
+Place the two datasets in [/10_Data](https://github.com/mshunya/AffineTL/tree/main/11_SARCOS/10_Data) folder and run [300_TransferLearning.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/300_TransferLearning.ipynb).
+- [300_TransferLearning.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/300_TransferLearning.ipynb) : Main code
+- [400_MakeResult.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/400_MakeResult.ipynb) : For figure in the paper
 
 ### References
 - Christopher KI Williams and Carl Edward Rasmussen. Gaussian processes for machine learning, volume 2. MIT press Cambridge, MA, 2006.
@@ -46,6 +46,9 @@ Run '100_MakeSourceModel.ipynb' to make the source models.
 We use the top 10 source models that showed the highest generalization performance in the source domain (No.66, 83, 39, 36, 70, 95, 56, 72, 69, 42).
 - 300_TransferLearning.ipynb : Main code
 - 400_MakeResult.ipynb : For figure in the paper
+
+### Models
+The source model we used is in "/30_Output/100_MakeSourceModel/" and "/30_Output/40_pkl/100_MakeSourceModel/."
 
 ### References
 - Sheng Ju, Ryo Yoshida, Chang Liu, Kenta Hongo, Terumasa Tadano, and Junichiro Shiomi. Exploring diamond-like lattice thermal conductivity crystals via feature-based transfer learning. Physical Review Materials, 5(5):053801, 2021.
