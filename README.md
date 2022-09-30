@@ -48,7 +48,7 @@ We use the top 10 source models that showed the highest generalization performan
 - [400_MakeResult.ipynb](https://github.com/mshunya/AffineTL/blob/main/12_LTC/20_PGM/300_MakeResult.ipynb) : For figure in the paper
 
 ### Models
-The source model we trained is in [/30_Output/100_MakeSourceModel](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/100_MakeSourceModel) and [/30_Output/40_pkl/100_MakeSourceModel](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/40_pkl)."
+The source model we trained is placed in [/30_Output/100_MakeSourceModel](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/100_MakeSourceModel) and [/30_Output/40_pkl/100_MakeSourceModel](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/40_pkl).
 
 ### References
 - Sheng Ju, Ryo Yoshida, Chang Liu, Kenta Hongo, Terumasa Tadano, and Junichiro Shiomi. Exploring diamond-like lattice thermal conductivity crystals via feature-based transfer learning. Physical Review Materials, 5(5):053801, 2021.
