@@ -25,7 +25,7 @@ You should download two dataset; 'sarcos_inv.mat' and 'satcos_inv_test.mat' from
 These dataset include 44,484 training samples and 4,449 test samples.
 
 ### Programs
-Place the two datasets in [/10_Data](https://github.com/mshunya/AffineTL/tree/main/11_SARCOS/10_Data) folder and run [300_TransferLearning.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/300_TransferLearning.ipynb).
+Place the two datasets in [/10_Data/](https://github.com/mshunya/AffineTL/tree/main/11_SARCOS/10_Data) folder and run [300_TransferLearning.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/300_TransferLearning.ipynb).
 - [300_TransferLearning.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/300_TransferLearning.ipynb) : Main code
 - [400_MakeResult.ipynb](https://github.com/mshunya/AffineTL/blob/main/11_SARCOS/20_PGM/400_MakeResult.ipynb) : For figure in the paper
 
@@ -39,7 +39,7 @@ We perform TL with the source task of predicting an alternative, computationally
 ### Dataset
 Two datasets obtained in Ju et al. (2021) are used, consisting of the lattice thermal conductivity (LTC) and scattering phase space (SPS), which are computed for 45 and 320 inorganic crystals, respectively. 
 To obtain the input descriptors, [XenonPy](https://github.com/yoshida-lab/XenonPy) is used to generate compositional descriptors of a material, which describe 290 features of the elemental composition of a given material.
-These dataset are placed in [/10_Data](https://github.com/mshunya/AffineTL/tree/main/12_LTC/10_Data) (SPSTC_290.pkl).
+These dataset are placed in [/10_Data/](https://github.com/mshunya/AffineTL/tree/main/12_LTC/10_Data) (SPSTC_290.pkl).
 
 ### Programs
 Run [100_MakeSourceModel.ipynb](https://github.com/mshunya/AffineTL/blob/main/12_LTC/20_PGM/100_MakeSourceModel.ipynb) to make the source models.
@@ -48,7 +48,7 @@ We use the top 10 source models that showed the highest generalization performan
 - [400_MakeResult.ipynb](https://github.com/mshunya/AffineTL/blob/main/12_LTC/20_PGM/300_MakeResult.ipynb) : For figure in the paper
 
 ### Models
-The source model we trained is placed in [/30_Output/100_MakeSourceModel](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/100_MakeSourceModel) and [/30_Output/40_pkl/100_MakeSourceModel](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/40_pkl).
+The source model we trained is placed in [/30_Output/100_MakeSourceModel/](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/100_MakeSourceModel) and [/30_Output/40_pkl/100_MakeSourceModel/](https://github.com/mshunya/AffineTL/tree/main/12_LTC/30_Output/40_pkl).
 
 ### References
 - Sheng Ju, Ryo Yoshida, Chang Liu, Kenta Hongo, Terumasa Tadano, and Junichiro Shiomi. Exploring diamond-like lattice thermal conductivity crystals via feature-based transfer learning. Physical Review Materials, 5(5):053801, 2021.
@@ -64,7 +64,7 @@ The PoLyInfo sample identifiers for the selected polymers are listed in [/10_Dat
 [MD_PI1070.csv](https://github.com/mshunya/AffineTL/blob/main/13_Cp/10_Data/MD_PI1070.csv) is the dataset of MD simulated values of these polymers and [PI_lib_FFKM.csv](https://github.com/mshunya/AffineTL/blob/main/13_Cp/10_Data/PI_lib_FFKM.csv) is 190-dimensional force field descriptors calculated by [Radonpy](https://github.com/RadonPy/RadonPy).
 
 ### Programs
-Before performing transfer learning, you should collect the experimental values for 70 polymers and run [100_CheckData.ipynb](https://github.com/mshunya/AffineTL/blob/main/13_Cp/20_PGM/100_CheckData.ipynb), and then '100_Data.pkl' will be created in [/30_Output/40_pkl/100_CheckData](https://github.com/mshunya/AffineTL/tree/main/13_Cp/30_Output/40_pkl/100_CheckData).
+Before performing transfer learning, you should collect the experimental values for 70 polymers and run [100_CheckData.ipynb](https://github.com/mshunya/AffineTL/blob/main/13_Cp/20_PGM/100_CheckData.ipynb), and then '100_Data.pkl' will be created in [/30_Output/40_pkl/100_CheckData/](https://github.com/mshunya/AffineTL/tree/main/13_Cp/30_Output/40_pkl/100_CheckData).
 - [300_TransferLearning.ipynb](https://github.com/mshunya/AffineTL/blob/main/13_Cp/20_PGM/300_TransferLearning.ipynb) : Main code
 - [400_MakeResult.ipynb](https://github.com/mshunya/AffineTL/blob/main/13_Cp/20_PGM/300_TransferLearning.ipynb) : For figure in the paper
 
