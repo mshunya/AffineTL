@@ -10,7 +10,7 @@ Some of the datasets are provided, but the rest must be downloaded from the dist
 The downloading instructions are given in the detailed description of each experiment.
 
 ## Publication
-Shunya Minami, Kenji Fukumizu, Yoshihiro Hayashi and Ryo Yoshida. "Transfer learning with affine model transformation." [arXiv:22XX.XXXXX](XXX)
+Shunya Minami, Kenji Fukumizu, Yoshihiro Hayashi and Ryo Yoshida. "Transfer learning with affine model transformation." [arXiv:2210.09745](https://arxiv.org/abs/2210.09745)
 
 # Repository Descriptions
 Each repository consists of three folders: '/10_Data' (dataset folder), '/20_PGM' (python code folder) and '30_Output' (output folder).
