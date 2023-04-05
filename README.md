@@ -1,5 +1,5 @@
 # Overview
-This repository provides Python code for the following four experiments conducted in Minami et al. (2022).
+This repository provides Python code for the following four experiments conducted in the paper.
 
 - Kinematics of the robot arms (Section 5.1)
 - Lattice thermal conductivity of inorganic crystals (Section 5.2)
